@@ -2,7 +2,8 @@ import { PropTypes } from 'prop-types';
 
 export const Statistics = ({ good, neutral, bad }) => {
   return (
-    <section title="Statistics">
+    <section>
+      Statistics
       <ul>
         <li>good: {good}</li>
         <li>neutral: {neutral}</li>

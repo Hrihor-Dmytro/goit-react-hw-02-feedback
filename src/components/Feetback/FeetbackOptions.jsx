@@ -2,7 +2,8 @@ import { PropTypes } from 'prop-types';
 
 export const FeedbackOptions = ({ options, incrementFeetback }) => {
   return (
-    <section title="Please leave feetback">
+    <section>
+      Please leave feetback
       <ul>
         {options.map((option, index) => (
           <li key={index}>
