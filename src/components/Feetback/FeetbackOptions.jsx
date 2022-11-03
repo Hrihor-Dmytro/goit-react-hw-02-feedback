@@ -1,19 +1,25 @@
 import { PropTypes } from 'prop-types';
+import {
+  ButtonList,
+  SectionList,
+  ButtonListItem,
+  Buttons,
+} from './Feetback.styled';
 
 export const FeedbackOptions = ({ options, incrementFeetback }) => {
   return (
-    <section>
+    <SectionList>
       Please leave feetback
-      <ul>
+      <ButtonList>
         {options.map((option, index) => (
-          <li key={index}>
-            <button type="button" onClick={() => incrementFeetback(option)}>
+          <ButtonListItem key={index}>
+            <Buttons type="button" onClick={() => incrementFeetback(option)}>
               {option}
-            </button>
-          </li>
+            </Buttons>
+          </ButtonListItem>
         ))}
-      </ul>
-    </section>
+      </ButtonList>
+    </SectionList>
   );
 };
 
